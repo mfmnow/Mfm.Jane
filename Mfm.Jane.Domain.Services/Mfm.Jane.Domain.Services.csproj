@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mfm.Jane.Data.Contracts\Mfm.Jane.Data.Contracts.csproj" />
+    <ProjectReference Include="..\Mfm.Jane.Data.Entities\Mfm.Jane.Data.Entities.csproj" />
+    <ProjectReference Include="..\Mfm.Jane.Domain.Contracts\Mfm.Jane.Domain.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

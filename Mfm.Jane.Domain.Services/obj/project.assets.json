@@ -1,0 +1,147 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Mfm.Jane.Data.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Mfm.Jane.Data.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Mfm.Jane.Data.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mfm.Jane.Data.Contracts.dll": {}
+        }
+      },
+      "Mfm.Jane.Data.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Mfm.Jane.Data.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mfm.Jane.Data.Entities.dll": {}
+        }
+      },
+      "Mfm.Jane.Domain.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Mfm.Jane.Domain.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Mfm.Jane.Domain.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mfm.Jane.Domain.Contracts.dll": {}
+        }
+      },
+      "Mfm.Jane.Domain.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Mfm.Jane.Domain.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mfm.Jane.Domain.Models.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mfm.Jane.Data.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Mfm.Jane.Data.Contracts/Mfm.Jane.Data.Contracts.csproj",
+      "msbuildProject": "../Mfm.Jane.Data.Contracts/Mfm.Jane.Data.Contracts.csproj"
+    },
+    "Mfm.Jane.Data.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Mfm.Jane.Data.Entities/Mfm.Jane.Data.Entities.csproj",
+      "msbuildProject": "../Mfm.Jane.Data.Entities/Mfm.Jane.Data.Entities.csproj"
+    },
+    "Mfm.Jane.Domain.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Mfm.Jane.Domain.Contracts/Mfm.Jane.Domain.Contracts.csproj",
+      "msbuildProject": "../Mfm.Jane.Domain.Contracts/Mfm.Jane.Domain.Contracts.csproj"
+    },
+    "Mfm.Jane.Domain.Models/1.0.0": {
+      "type": "project",
+      "path": "../Mfm.Jane.Domain.Models/Mfm.Jane.Domain.Models.csproj",
+      "msbuildProject": "../Mfm.Jane.Domain.Models/Mfm.Jane.Domain.Models.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Mfm.Jane.Data.Contracts >= 1.0.0",
+      "Mfm.Jane.Data.Entities >= 1.0.0",
+      "Mfm.Jane.Domain.Contracts >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\mfm\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\github\\Mfm.Jane\\Mfm.Jane.Domain.Services\\Mfm.Jane.Domain.Services.csproj",
+      "projectName": "Mfm.Jane.Domain.Services",
+      "projectPath": "C:\\github\\Mfm.Jane\\Mfm.Jane.Domain.Services\\Mfm.Jane.Domain.Services.csproj",
+      "packagesPath": "C:\\Users\\mfm\\.nuget\\packages\\",
+      "outputPath": "C:\\github\\Mfm.Jane\\Mfm.Jane.Domain.Services\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\mfm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\github\\Mfm.Jane\\Mfm.Jane.Data.Contracts\\Mfm.Jane.Data.Contracts.csproj": {
+              "projectPath": "C:\\github\\Mfm.Jane\\Mfm.Jane.Data.Contracts\\Mfm.Jane.Data.Contracts.csproj"
+            },
+            "C:\\github\\Mfm.Jane\\Mfm.Jane.Data.Entities\\Mfm.Jane.Data.Entities.csproj": {
+              "projectPath": "C:\\github\\Mfm.Jane\\Mfm.Jane.Data.Entities\\Mfm.Jane.Data.Entities.csproj"
+            },
+            "C:\\github\\Mfm.Jane\\Mfm.Jane.Domain.Contracts\\Mfm.Jane.Domain.Contracts.csproj": {
+              "projectPath": "C:\\github\\Mfm.Jane\\Mfm.Jane.Domain.Contracts\\Mfm.Jane.Domain.Contracts.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

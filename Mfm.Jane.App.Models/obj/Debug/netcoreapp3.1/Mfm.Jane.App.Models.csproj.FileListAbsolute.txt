@@ -1,0 +1,8 @@
+C:\github\Mfm.Jane\Mfm.Jane.App.Models\bin\Debug\netcoreapp3.1\Mfm.Jane.App.Models.deps.json
+C:\github\Mfm.Jane\Mfm.Jane.App.Models\bin\Debug\netcoreapp3.1\Mfm.Jane.App.Models.dll
+C:\github\Mfm.Jane\Mfm.Jane.App.Models\bin\Debug\netcoreapp3.1\Mfm.Jane.App.Models.pdb
+C:\github\Mfm.Jane\Mfm.Jane.App.Models\obj\Debug\netcoreapp3.1\Mfm.Jane.App.Models.csproj.CoreCompileInputs.cache
+C:\github\Mfm.Jane\Mfm.Jane.App.Models\obj\Debug\netcoreapp3.1\Mfm.Jane.App.Models.AssemblyInfoInputs.cache
+C:\github\Mfm.Jane\Mfm.Jane.App.Models\obj\Debug\netcoreapp3.1\Mfm.Jane.App.Models.AssemblyInfo.cs
+C:\github\Mfm.Jane\Mfm.Jane.App.Models\obj\Debug\netcoreapp3.1\Mfm.Jane.App.Models.dll
+C:\github\Mfm.Jane\Mfm.Jane.App.Models\obj\Debug\netcoreapp3.1\Mfm.Jane.App.Models.pdb
