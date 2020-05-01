@@ -11,10 +11,13 @@ namespace Mfm.Jane.Domain.Services
     public class TestModelDomainService : ITestModelDomainService
     {
         private readonly ITestEntityDataAccess _testModelDataAccess;
+        private readonly ITextManagerDomainService _textManagerDomainService;
 
-        public TestModelDomainService(ITestEntityDataAccess testModelDataAccess)
+        public TestModelDomainService(ITestEntityDataAccess testModelDataAccess,
+            ITextManagerDomainService textManagerDomainService)
         {
             _testModelDataAccess = testModelDataAccess;
+            _textManagerDomainService = textManagerDomainService;
         }
 
         public virtual async Task CreateTestModel(TestModel testModel)
@@ -22,7 +25,7 @@ namespace Mfm.Jane.Domain.Services
             if (!IsValidModel(testModel)) {
                 throw new InvalidTestModelException("Invalid Text Passed");
             }
-            await _testModelDataAccess.CreateTestEntity(testModel.Test);
+            await _testModelDataAccess.CreateTestEntity(await _textManagerDomainService.ToUpper(testModel.Test));
         }
 
         public async Task<List<TestModel>> GetTestModels()

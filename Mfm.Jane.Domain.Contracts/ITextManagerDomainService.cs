@@ -1,7 +1,9 @@
-﻿namespace Mfm.Jane.Domain.Contracts
+﻿using System.Threading.Tasks;
+
+namespace Mfm.Jane.Domain.Contracts
 {
     public interface ITextManagerDomainService
     {
-        string ReverseText(string textToReverse);
+        Task<string> ToUpper(string textToConvert);
     }
 }

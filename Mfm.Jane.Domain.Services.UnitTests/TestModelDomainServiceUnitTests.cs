@@ -1,4 +1,5 @@
 using Mfm.Jane.Data.Contracts;
+using Mfm.Jane.Domain.Contracts;
 using Mfm.Jane.Domain.Models;
 using Mfm.Jane.Domain.Models.Exceptions;
 using Mfm.Jane.Domain.Services.UnitTests.MockProviders;
@@ -12,10 +13,11 @@ namespace Mfm.Jane.Domain.Services.UnitTests
     {
         private readonly Mock<ITestEntityDataAccess> _testModelDataAccess;
         private readonly Mock<TestModelDomainService> _testModelDomainService;
+        private readonly Mock<ITextManagerDomainService> _textManagerDomainService;
 
         public TestModelDomainServiceUnitTests()
         {
-            (_testModelDataAccess, _testModelDomainService) =
+            (_testModelDataAccess, _testModelDomainService, _textManagerDomainService) =
                 TestModelDomainServiceMockerProvider.GetMocks();
         }
 
@@ -27,6 +29,7 @@ namespace Mfm.Jane.Domain.Services.UnitTests
 
             _testModelDomainService.Verify(t => t.IsValidModel(TestModelDomainServiceMockerProvider.MockedValidTestModel), Times.Once);
             _testModelDataAccess.Verify(t => t.CreateTestEntity(It.IsAny<string>(), ""), Times.Once);
+            _textManagerDomainService.Verify(t => t.ToUpper(TestModelDomainServiceMockerProvider.MockedValidTestModel.Test), Times.Once);
         }
 
         [Fact]
